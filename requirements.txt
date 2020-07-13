@@ -32,7 +32,7 @@ pycparser==2.20
 pycrypto==2.6.1
 pydot==1.4.1
 pydotplus==2.0.2
-PyMuPDF==1.17.20
+PyMuPDF==1.17.3
 pyOpenSSL==19.1.0
 pyparsing==2.4.7
 python-dateutil==2.8.1
