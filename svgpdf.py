@@ -34,11 +34,13 @@ def make_pdf(input_folder, output_path, fname, quiet):
                     for line in non_svgs:
                         print('\t' + line)
         except:
-            sys.exit('Error - something went wrong while saving the file')
+            print('Error - something went wrong while saving the file', file=sys.stderr)
+            return 1
     else:
-        sys.exit('Error - no SVGs in input folder')
+        print('Error - no SVGs in input folder\n', file=sys.stderr)
+        return 1
 
-    return
+    return 0
 
 
 if __name__ == '__main__':
@@ -64,5 +66,9 @@ if __name__ == '__main__':
 
     if os.path.isfile(out_path) and not args.force:
         sys.exit('Error - file \"' + args.output + '\" already exists!')
+        
 
-    make_pdf(in_path, out_path, args.output, args.quiet)
+    if make_pdf(in_path, out_path, args.output, args.quiet):
+        if not args.quiet:
+            parser.print_help()
+            sys.exit()

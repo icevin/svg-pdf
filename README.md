@@ -18,7 +18,22 @@ optional arguments:
 
 ```
 pip3 install -r requirements.txt
+chmod +x svgpdf.py
 ```
 
 Note - you may need to install PyMuPDF manually
+
+#### Adding to PATH (linux)
+
+You can copy to /usr/bin:
+```
+sudo cp svgpdf.py /usr/bin/svgpdf
+```
+(usage will now be svgpdf instead of ./svgpdf.py)
+
+or add the directory containing svgpdf
+```
+export PATH=$PATH:$(pwd)
+```
+
 
