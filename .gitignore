@@ -26,6 +26,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+test/
 svg-pdf-env/
 
 # PyInstaller
@@ -124,3 +125,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+.vscode/
