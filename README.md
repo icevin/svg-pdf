@@ -1,5 +1,6 @@
 # svg-pdf
 Combine a folder of SVGs into a PDF
+
 ```
 usage: svgpdf.py [-h] [-f] [-q] [input] [output]
 
@@ -12,3 +13,12 @@ optional arguments:
   -f, --force  Force overwrite output file
   -q, --quiet  Supress messages
 ```
+
+#### Installation
+
+```
+pip3 install -r requirements.txt
+```
+
+Note - you may need to install PyMuPDF manually
+
