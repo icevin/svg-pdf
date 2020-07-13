@@ -31,7 +31,7 @@ sudo cp svgpdf.py /usr/bin/svgpdf
 ```
 (usage will now be svgpdf instead of ./svgpdf.py)
 
-or add the directory containing svgpdf
+or add the directory containing svgpdf to your PATH
 ```
 export PATH=$PATH:$(pwd)
 ```
